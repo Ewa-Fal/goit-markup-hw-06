@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hw5-main page</title>
+    <title>hw6-main page</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -195,6 +195,7 @@
 
     <footer class="footer">
       <section class="container"> 
+        
         <ul class="footer-layout">
           <li>
         <p class="footer-logo"><span class="blue">Web</span>Studio</p>
@@ -237,11 +238,39 @@
                 </svg>
               </div>
               </li>
-        </div>
-      </li>
-      </ul></ul>
+      </ul>
+  
+  <li>
+  <div class="newsletter">
+    <p class="footer-paragraph">Zapisz się do newslettera</p>
+    <div class="footer-icons-position">
+      <form name="footer-news-letter" autocomplete="on" method="POST" validate>
+        <!-- action="javascript:void(0);" -->
+        <input
+          class="news-letter-email"
+          type="email"
+          name="email"
+          placeholder="E-mail"
+          title="Podaj adres e-mail"
+          pattern="
+          ^(?P<local>[a-zA-Z0-9.!#$%&'*+/=?^_\x60{|}~-]+)@(?P<domain>[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*)$"
+          required
+        />
+        <button class="news-letter-submit" type="submit">
+          Zapisz się<svg class="news-letter-submit-svg" width="24" height="24">
+            <use href="./images/icon2.svg#icon-icon-send"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </li>
+  
+  </div>
+  </div>
+  
+  </ul>
   </section>
-    </footer>
+  </footer>
       </body>
       </html>
        
